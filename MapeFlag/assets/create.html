@@ -1,0 +1,27 @@
+<label>
+	My MAPE Flag<br>
+	<small>Enter flag data</small>
+</label>
+<div class="form-group">
+	<input type="text" class="form-control" name="content" value="{{ content }}">
+</div>
+<label><small>cutoff</small></label>
+<div class="form-group">
+	<input type="text" class="form-control" name="data" value="{{ data }}">
+</div>
+<div class="form-group">
+	<label>Examples</label>
+	<table class="table small">
+		<thead>
+			<tr>
+				<th scope="col">Description</th>
+				<th scope="col">Flag</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>Matches flag if the average relative error is lower than 10%</td>
+			<td><code>cutoff: 10</code></td>
+		</tr>
+	</table>
+</div>
+<input type="hidden" name="type" value="mape">
